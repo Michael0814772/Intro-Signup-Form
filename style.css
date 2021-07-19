@@ -1,0 +1,133 @@
+:root {
+  --dark-Blue: hsl(249, 10%, 26%);
+  --grayish: hsl(246, 25%, 77%);
+  --Red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Poppins;
+}
+
+body {
+  background-image: url(./bg-intro-mobile.png);
+  background-color: var(--Red);
+}
+
+body,
+ul,
+li,
+p,
+h1 {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.introduction h1 {
+  color: white;
+  text-align: center;
+  margin: 90px auto 25px;
+  width: 95%;
+  font-weight: 300;
+}
+.introduction p {
+  color: white;
+  text-align: center;
+  margin: 0 auto 90px;
+  width: 90%;
+  font-size: 1.1rem;
+}
+
+.try-it p {
+  color: white;
+  text-align: center;
+  background-color: #2a215f;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 30px;
+  border-radius: 10px;
+  width: 90%;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 5px rgba(95, 75, 64, 0.5);
+          box-shadow: 0 5px rgba(95, 75, 64, 0.5);
+}
+.try-it p:hover {
+  background-color: #43397f;
+}
+
+form {
+  text-align: center;
+  background-color: white;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px rgba(95, 75, 64, 0.5);
+          box-shadow: 0 5px rgba(95, 75, 64, 0.5);
+  margin-bottom: 70px;
+}
+form input {
+  padding: 10px;
+  margin-top: 15px;
+  width: 90%;
+  font-weight: bold;
+  border-radius: 35px #ece7e7;
+  font-size: 0.7rem;
+}
+form .f-name,
+form .l-name,
+form .email,
+form .password {
+  margin-left: -40px;
+  visibility: hidden;
+}
+form button {
+  margin-top: 15px;
+  width: 90%;
+  margin-bottom: 15px;
+  margin-left: 13px;
+  padding: 7px 10px;
+  color: white;
+  background-color: var(--green);
+  border: 0;
+  -webkit-box-shadow: 0 2px #888;
+          box-shadow: 0 2px #888;
+}
+form button:hover {
+  background-color: var(--dark-Blue);
+}
+form p {
+  width: 90%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--grayish);
+  font-size: 0.7rem;
+  padding-bottom: 20px;
+}
+form span {
+  color: var(--Red);
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1000px) {
+  .section-one {
+    width: 50%;
+    margin-top: 150px;
+  }
+  .section-one .introduction {
+    float: left;
+  }
+
+  .section-two {
+    width: 50%;
+    float: right;
+  }
+  .section-two form input {
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
+}
