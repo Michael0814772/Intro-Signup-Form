@@ -77,6 +77,9 @@ form {
         border-radius: 35px rgb(236, 231, 231);
         font-size: 0.7rem;
     }
+    #fname {
+        margin-top: 30px;
+    }
     .f-name, 
     .l-name, 
     .email, 
@@ -116,9 +119,12 @@ form {
 @media screen and (min-width: 1000px) {
     .section-one {
         width: 50%;
-        margin-top: 150px;
+        margin-top: 100px;
         .introduction {
             float: left;
+            h1 {
+                margin-top: 150px;
+            }
         }
     }
 
